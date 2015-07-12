@@ -1,34 +1,34 @@
 // Written by Benjamin Smith
 // July 11, 2015
-// Chapter 2, page 96: Using Arithmetic Operators
+// Implicit and Explicit Casting
 
 import java.util.Scanner;
 
-public class ArithmeticDemo2
+public class ArithmeticDemo3
 {
    public static void main(String[] args)
    {
 //Declarations
-      double firstNumber;
-      double secondNumber;
-      double sum;
-      double difference;
+      int firstNumber;
+      int secondNumber;
+      int sum;
+      int difference;
       double average;
       
       Scanner input = new Scanner(System.in);
 
-//Main; prompt user for and accept two integers
+//Main; promt user for and accept two integers
 
-      System.out.print("Please enter a double >> ");
+      System.out.print("Please enter an integer >> ");
       firstNumber = input.nextInt();
-      System.out.print("Please enter another double >> ");
+      System.out.print("Please enter another integer >> ");
       secondNumber = input.nextInt();
 
 //Perform arithmetic operations
 
       sum = firstNumber + secondNumber;
       difference = firstNumber - secondNumber;
-      average = sum / 2;
+      average = (double) sum / 2;
 
 //Display calculated values
 
