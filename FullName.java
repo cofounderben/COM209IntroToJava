@@ -7,6 +7,7 @@ public class FullName
 {
    public static void main(String[] args)
    {
+//This method will display on the screen anything written between the quotation marks.
       System.out.println("Benjamin Smith");
    }
 }
